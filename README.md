@@ -12,7 +12,10 @@ Often is is desired to **check if every element from one unsorted range is found
 ```c++
 template <class InputIt1, class InputIt2>
 bool includes_unordered(
-    InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2);
+    InputIt1 first1,
+    InputIt1 last1,
+    InputIt2 first2,
+    InputIt2 last2);
 ``` 
 
 #### 2:
@@ -57,7 +60,10 @@ If the algorithm fails to allocate memory, `std::bad_alloc` is thrown.
 ```c++
 template <class InputIt1, class InputIt2>
 bool includes_unordered(
-    InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2)
+    InputIt1 first1,
+    InputIt1 last1,
+    InputIt2 first2,
+    InputIt2 last2)
 {
     for(; first2 != last2; ++first2)
     {
